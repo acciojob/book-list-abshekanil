@@ -31,13 +31,3 @@ loginForm.addEventListener("submit" , (e) =>{
 	cell4.appendChild(cancelButton);
 });
 
-table.addEventListener("click" , function(e){
-	if(e.target.classList.contains("delete"))
-	{
-		let row = e.target.parentNode.parentNode;
-		if(row)
-		{
-			table.deleteRow(row.rowIndex);
-		}
-	}
-});
